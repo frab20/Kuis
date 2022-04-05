@@ -19,10 +19,13 @@ public class Android extends Test implements PembobotanNilai{
     @Override
     public void getKelulusan() {
         double nilaiAkhir = (getTesTulis()*pTulis) + (getTesCoding()*pCoding) + (getTesWawancara()*pWawancara);
+        System.out.println("Nilai akhir : " + nilaiAkhir);
         if(nilaiAkhir >= nilaiLulus){
-            System.out.println("Selamat kepada " + NIK + " telah diterima sebagai Android");
+            System.out.println("Keterangan : LULUS");
+            System.out.println("Selamat kepada " + super.nama + " telah diterima sebagai Android");
         }else{
-            System.out.println("Mohon maaf kepada " + NIK + " telah ditolak sebagai Android");
+            System.out.println("Keterangan : GAGAL");
+            System.out.println("Mohon maaf kepada " + super.nama + " telah ditolak sebagai Android");
         } 
     }
     
