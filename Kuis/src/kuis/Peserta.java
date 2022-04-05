@@ -10,7 +10,7 @@ package kuis;
  * @author WXO
  */
 public class Peserta {
-    final String NIK, nama;
+    String NIK, nama;
 
     public Peserta(String NIK, String nama) {
         this.NIK = NIK;
